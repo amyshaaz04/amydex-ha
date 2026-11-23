@@ -1,0 +1,24 @@
+name: AmyDex Tunnel
+version: "1.1.0"
+slug: amydex_tunnel
+description: Connect Home Assistant to your AmyDex HTTPS tunnel.
+arch:
+  - amd64
+  - aarch64
+startup: application
+boot: manual
+init: true
+breaking_versions:
+  - "1.1.0"
+host_network: true
+map:
+  - addon_config:rw
+backup_exclude:
+  - amydex-connector.json
+  - connector.json
+  - .connector-*
+options:
+  server_url: "https://amydex.amyshaaz.com"
+schema:
+  server_url: str
+  pairing_code: password?

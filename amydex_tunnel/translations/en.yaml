@@ -1,0 +1,7 @@
+configuration:
+  server_url:
+    name: AmyDex server URL
+    description: HTTPS address from the AmyDex pairing details. Used when entering a pairing code.
+  pairing_code:
+    name: Pairing code
+    description: Optional one-time code from AmyDex. Clear the code after pairing succeeds.

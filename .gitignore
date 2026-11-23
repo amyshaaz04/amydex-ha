@@ -1,0 +1,6 @@
+.DS_Store
+connector.json
+amydex-connector.json
+.connector-*
+options.json
+*.key
